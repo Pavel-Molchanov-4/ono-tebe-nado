@@ -68,6 +68,8 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     line-height: 115%;
+    position: relative;
+    z-index: 1;
 }
 
 .aligned-text_center {
@@ -97,6 +99,8 @@
     font-size: 22px;
     line-height: 127%;
     text-transform: uppercase;
+    position: relative;
+    z-index: 1;
 }
 
 .cover__description-text {
@@ -128,7 +132,8 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.6;
-    z-index: 1;
+    background: #000;
+    z-index: 0;
 }
 
 .lots {
@@ -193,6 +198,8 @@
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .card__text {
@@ -203,6 +210,8 @@
     font-size: 20px;
     line-height: 120%;
     color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .lots__look-more {
