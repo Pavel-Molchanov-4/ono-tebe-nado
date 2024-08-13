@@ -42,7 +42,7 @@
     line-height: 135%;
 }
 
-.address__tel {
+.address__text {
     letter-spacing: 0.01em;
     text-decoration: underline;
     text-underline-position: under;
@@ -54,6 +54,7 @@
     min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     color:white;
 }
@@ -115,8 +116,9 @@
 .bet-button {
     width: 256px;
     height: 51px;
-    border: 1px solid white;
+    border: 1px solid currentColor;
     background-color: transparent;
+    font-family: Raleway, sans-serif;
     font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
@@ -140,7 +142,6 @@
     padding: 179px 24px 146px;
     display: flex;
     flex-direction: column;
-    min-height: 692px;
 }
 
 .lots__heading {
@@ -152,8 +153,10 @@
 
 .lots__card-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 25px;
+    /*justify-content: space-between;*/
     flex-grow: 1;
     padding-top: 27px;
     list-style: none;
@@ -170,9 +173,13 @@
 .card-link {
     display: flex;
     width: 100%;
+    text-decoration: none;
 }
 
 .card {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     width: 100%;
     display: flex;
@@ -230,26 +237,19 @@
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .about {
     display: grid;
     column-gap: 25px;
-    min-height: 595px;
     margin: 0 24px;
     grid-template-columns: 334px 1fr;
     grid-template-rows: 1fr;
@@ -276,19 +276,22 @@
     max-width: 148px;
 }
 
+.about__column-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
 .about__title {
     padding-top: 136px;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
 }
 
 .about__text-advanced {
-    padding-bottom: 24px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 120%;
     letter-spacing: 0.01em;
 }
 
@@ -301,7 +304,6 @@
 .footer {
     display: flex;
     margin: 180px 50px 88px;
-    min-height: 98px;
     justify-content: space-between;
 }
 
