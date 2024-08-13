@@ -276,7 +276,7 @@
     max-width: 148px;
 }
 
-.about__column-text{
+.about__column-text {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
